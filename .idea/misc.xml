@@ -4,6 +4,13 @@
     <entry_points version="2.0" />
   </component>
   <component name="IdProvider" IDEtalkID="3282DE52C62ECE94E2537851C9E47456" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/com-jackman-arithmetic/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK" />
 </project>
 
