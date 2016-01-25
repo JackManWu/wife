@@ -1,4 +1,4 @@
-import com.jackman.InsertSortImpl;
+import com.jackman.algorithm.InsertSortImpl;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

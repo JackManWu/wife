@@ -1,5 +1,5 @@
-import com.jackman.design.pattern.Login;
-import com.jackman.design.pattern.LoginManager;
+import com.jackman.design.pattern.简单工厂模式.Login;
+import com.jackman.design.pattern.简单工厂模式.LoginManager;
 import org.junit.Test;
 
 /**

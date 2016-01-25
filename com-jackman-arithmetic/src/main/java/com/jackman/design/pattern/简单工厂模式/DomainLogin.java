@@ -1,4 +1,4 @@
-package com.jackman.design.pattern;
+package com.jackman.design.pattern.简单工厂模式;
 
 /**
  * Created by wujinlei on 2016/1/8.

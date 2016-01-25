@@ -1,4 +1,4 @@
-package com.jackman.design.pattern;
+package com.jackman.algorithm;
 
 /**
  * Created by wujinlei on 2015/12/29.
