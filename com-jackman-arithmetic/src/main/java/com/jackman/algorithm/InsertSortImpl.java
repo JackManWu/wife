@@ -2,6 +2,7 @@ package com.jackman.algorithm;
 
 /**
  * Created by wujinlei on 2015/12/29.
+ * 插入排序
  */
 public class InsertSortImpl implements SortInterface {
 
