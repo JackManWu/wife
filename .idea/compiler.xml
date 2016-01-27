@@ -25,6 +25,8 @@
         <module name="com-jackman-arithmetic" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com-jackman-arithmetic" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
