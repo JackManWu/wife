@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
- * Created by wujinlei on 2016/1/26.
+ * Created by JackMan on 2016/1/26.
  */
 public class CallableDemo {
     public static void main(String[] args) {

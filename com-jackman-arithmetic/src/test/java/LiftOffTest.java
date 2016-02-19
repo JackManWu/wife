@@ -2,7 +2,7 @@ import com.jackman.thread.LiftOff;
 import org.junit.Test;
 
 /**
- * Created by wujinlei on 2016/1/21.
+ * Created by JackMan on 2016/1/21.
  */
 public class LiftOffTest {
 

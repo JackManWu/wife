@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by wujinlei on 2016/1/26.
+ * Created by JackMan on 2016/1/26.
  */
 public class SleepingTask extends LiftOff{
     @Override

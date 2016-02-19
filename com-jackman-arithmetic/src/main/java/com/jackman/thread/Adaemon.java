@@ -3,7 +3,7 @@ package com.jackman.thread;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by zhe800 on 2016/1/27.
+ * Created by JackMan on 2016/1/27.
  */
 public class Adaemon implements Runnable{
     public void run() {

@@ -1,7 +1,7 @@
 package com.jackman.design.pattern.单例模式;
 
 /**
- * Created by wujinlei on 2016/1/25.
+ * Created by JackMan on 2016/1/25.
  * 懒汉式
  */
 public class LazySingleton {

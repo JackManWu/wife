@@ -1,7 +1,7 @@
 package com.jackman.design.pattern.单例模式;
 
 /**
- * Created by wujinlei on 2016/1/25.
+ * Created by JackMan on 2016/1/25.
  * 延迟加载及线程安全
  */
 public class SingletonOther {

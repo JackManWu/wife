@@ -21,4 +21,11 @@ public class OtherTest {
         System.out.println(outputStream.size());
         System.out.println(outputStream.toString());
     }
+    @Test
+    public void isBoolean(){
+        if(2==2){
+            System.exit(0);
+            return;
+        }
+    }
 }

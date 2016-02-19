@@ -3,7 +3,7 @@ import com.jackman.design.pattern.简单工厂模式.LoginManager;
 import org.junit.Test;
 
 /**
- * Created by wujinlei on 2016/1/8.
+ * Created by JackMan on 2016/1/8.
  */
 public class LoginTest {
     @Test

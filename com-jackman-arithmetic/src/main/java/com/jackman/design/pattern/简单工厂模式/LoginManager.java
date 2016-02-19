@@ -1,7 +1,7 @@
 package com.jackman.design.pattern.简单工厂模式;
 
 /**
- * Created by wujinlei on 2016/1/8.
+ * Created by JackMan on 2016/1/8.
  */
 public class LoginManager {
     public static Login factory(String type) {

@@ -1,7 +1,7 @@
 package com.jackman.thread;
 
 /**
- * Created by zhe800 on 2016/1/27.
+ * Created by JackMan on 2016/1/27.
  */
 public class SelfManaged implements Runnable {
     private int countDown = 5;

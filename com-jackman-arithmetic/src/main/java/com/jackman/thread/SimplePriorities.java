@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Created by wujinlei on 2016/1/26.
+ * Created by JackMan on 2016/1/26.
  */
 public class SimplePriorities implements Runnable {
     private int countDown = 5;

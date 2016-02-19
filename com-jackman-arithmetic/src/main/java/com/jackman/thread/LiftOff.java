@@ -1,7 +1,7 @@
 package com.jackman.thread;
 
 /**
- * Created by wujinlei on 2016/1/21.
+ * Created by JackMan on 2016/1/21.
  */
 public class LiftOff implements Runnable {
     protected int countDown = 10;

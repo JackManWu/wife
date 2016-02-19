@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by wujinlei on 2015/12/29.
+ * Created by JackMan on 2015/12/29.
  */
 public class InsertSortTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(InsertSortTest.class);

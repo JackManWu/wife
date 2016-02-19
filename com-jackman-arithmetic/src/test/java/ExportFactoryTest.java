@@ -4,7 +4,7 @@ import com.jackman.design.pattern.工厂方法模式.ExportHtmlFactory;
 import org.junit.Test;
 
 /**
- * Created by wujinlei on 2016/1/25.
+ * Created by JackMan on 2016/1/25.
  */
 public class ExportFactoryTest {
     @Test

@@ -4,7 +4,7 @@ import com.jackman.design.pattern.抽象工厂模式.ComputerEngineer;
 import org.junit.Test;
 
 /**
- * Created by wujinlei on 2016/1/25.
+ * Created by JackMan on 2016/1/25.
  */
 public class ComputerEngineerTest {
     @Test

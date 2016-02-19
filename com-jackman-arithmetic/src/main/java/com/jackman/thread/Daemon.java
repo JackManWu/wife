@@ -1,7 +1,7 @@
 package com.jackman.thread;
 
 /**
- * Created by zhe800 on 2016/1/27.
+ * Created by JackMan on 2016/1/27.
  */
 public class Daemon implements Runnable {
     private Thread[] t = new Thread[10];
