@@ -7,4 +7,37 @@
     <bean id="clientService" factory-bean="serviceLocator" factory-method="createClientServiceInstance"/>
     <bean id="accountService" factory-bean="serviceLocator" factory-method="createAccountServiceInstance"/>
 
+    <bean id="parent" abstract="true" class="com.jackman.spring.service.AccountService">
+        <property name="administrator">
+            <props>
+                <prop key="administrator">admin@gmail.com</prop>
+                <prop key="support">suport@gmail.com</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="child" parent="parent">
+        <property name="administrator">
+            <props merge="true">
+                <prop key="sales">sales@gmail.com</prop>
+                <prop key="support">suport@gmail.com</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="nullService" class="com.jackman.spring.service.AccountService">
+        <property name="administrator">
+            <null/>
+        </property>
+    </bean>
+
+    <bean id="replacementComputeValue" class="com.jackman.spring.service.ReplacementComputeValue"/>
+
+    <bean id="myValueCalcutor" class="com.jackman.spring.service.MyValueCalcutor">
+        <replaced-method name="computeValue" replacer="replacementComputeValue">
+            <arg-type>java.lang.String</arg-type>
+        </replaced-method>
+    </bean>
+
+    <bean id="eatTask" class="com.jackman.spring.service.impl.EatTask"/>
 </beans>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="exampleBean" class="com.jackman.spring.pojo.ExampleBean">
         <constructor-arg type="int" value="750000"/>
@@ -17,6 +19,8 @@
         <constructor-arg name="ultimateAnswer" value="432423"/>
     </bean>
 
+    <bean id="exampleBeanC" class="com.jackman.spring.pojo.ExampleBean" c:_0="213123" c:_1="12321" lazy-init="true"/>
+
     <bean id="exampleCBean" class="com.jackman.spring.pojo.ExampleCBean">
         <property name="exampleABean">
             <ref bean="exampleABean"/>
@@ -27,4 +31,54 @@
 
     <bean id="exampleABean" class="com.jackman.spring.pojo.ExampleABean"/>
     <bean id="exampleBBean" class="com.jackman.spring.pojo.ExampleBBean"/>
+
+    <bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close"
+          p:driverClassName="com.mysql.jdbc.Driver"
+          p:url="jdbc:mysql://127.0.0.1:3306/mydb"
+          p:username="root"
+          p:password="123456"/>
+
+    <bean id="apple1" class="com.jackman.spring.pojo.Apple">
+        <property name="administrator">
+            <props>
+                <prop key="administrator">administrator@example.org</prop>
+                <prop key="support">support@example.org</prop>
+                <prop key="development">development@example.org</prop>
+            </props>
+        </property>
+        <property name="someList">
+            <list>
+                <value>a list element followed by a reference</value>
+                <ref bean="myDataSource"/>
+            </list>
+        </property>
+        <property name="someMap">
+            <map>
+                <entry key="an entry" value="just some string"/>
+                <entry key="a ref" value-ref="myDataSource"/>
+            </map>
+        </property>
+        <property name="someSet">
+            <set>
+                <value>just some string</value>
+                <ref bean="myDataSource"/>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="fruit" class="com.jackman.spring.pojo.Fruit">
+        <property name="apple">
+            <idref bean="apple1"/>
+        </property>
+    </bean>
+
+    <bean id="animals" class="com.jackman.spring.pojo.Animals" scope="prototype">
+        <property name="color" value="red"/>
+        <property name="weight" value="24"/>
+    </bean>
+
+    <bean id="commond" class="com.jackman.spring.pojo.Commond"/>
+
+    <bean id="commondManager" class="com.jackman.spring.service.CommondManager"/>
 </beans>

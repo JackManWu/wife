@@ -1,0 +1,14 @@
+package com.jackman.other;
+
+/**
+ * Created by JackManWu on 2017/2/17.
+ */
+public class Pair<K,V> {
+    public final K key;
+    public final V value;
+
+    public Pair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+}
